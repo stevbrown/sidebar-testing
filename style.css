@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1B20;
+}
+
+.sidebar {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: 100vh;
+    padding: 24px 0;
+    background-color: #16181C;
+}
+
+.sidebar .logotype {
+    width: 32px;
+    aspect-ratio: 1/1;
+    transition: transform 0.35s ease;
+}
+.sidebar .logotype:hover {
+    cursor: grab;
+    transform: scale(1.05);
+}
+
+.sidebar nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sidebar nav li {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 16px;
+    border-right: 0px solid transparent;
+    gap: 10px;
+    transition: transform .35s ease, border-right .35s ease;
+}
+
+.sidebar nav li:hover {
+    cursor: pointer;
+    border-right: 1px solid #489FFA;
+    filter: brightness(0) saturate(100%) invert(59%) sepia(98%) saturate(2670%) hue-rotate(189deg) brightness(100%) contrast(96%);
+}
+
+.sidebar nav li:active {
+    cursor: default;
+}
+
+.sidebar nav li:hover img {
+    transform: scale(1.1);
+}
+
+.sidebar nav li:active img {
+    transform: scale(.95);
+}
+
+.sidebar nav li img {
+    width: 16px;
+    aspect-ratio: 1/1;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(24%) saturate(220%) hue-rotate(164deg) brightness(91%) contrast(83%);
+    transition: transform .35s ease;
+}
+
+.sidebar button.sidebar__info {
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    background-color: transparent;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 16px;
+    gap: 10px;
+    transition: transform .35s ease, border-right .35s ease;
+}
+
+.sidebar button.sidebar__info:hover {
+    cursor: pointer;
+    border-right: 1px solid #489FFA;
+    filter: brightness(0) saturate(100%) invert(59%) sepia(98%) saturate(2670%) hue-rotate(189deg) brightness(100%) contrast(96%);
+}
+
+.sidebar button.sidebar__info:active {
+    cursor: default;
+}
+
+.sidebar button.sidebar__info:hover img {
+    transform: scale(1.1);
+}
+
+.sidebar button.sidebar__info:active img {
+    transform: scale(.95);
+}
+
+.sidebar button.sidebar__info img {
+    width: 16px;
+    aspect-ratio: 1/1;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(24%) saturate(220%) hue-rotate(164deg) brightness(91%) contrast(83%);
+    transition: transform .35s ease;
+}
